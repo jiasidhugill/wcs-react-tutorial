@@ -1,14 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-// add useNavigate to the import statement
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import About from './pages/about';
 
 function Home() {
-    const navigate = useNavigate(); // add this line
+    const navigate = useNavigate();
 
     const goToAbout = () => {
-        navigate('/about'); // navigate to the /about page when function is called
+        navigate('/about');
     };
     
     return (
@@ -16,12 +15,10 @@ function Home() {
          <h1>This is my web app!</h1>
          <p>It has a paragraph here</p>
          <h3>And a subheading here</h3>
-         <button onClick={goToAbout}>About us</button> {/* this button takes us to the about page*/}
+         <button onClick={goToAbout}>About us</button>
       </div>
     );
 }
-
-// leave the rest of the file unchanged
 
 function App() {
   return (
