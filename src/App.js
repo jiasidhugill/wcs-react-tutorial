@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import About from './pages/about';
-import Result from './components/search-result'; // import your result component
+import Result from './components/search-result';
 
 function Home() {
     const navigate = useNavigate();
@@ -11,7 +11,7 @@ function Home() {
         navigate('/about');
     };
 
-    const data = [ // this is the data we'll use on our web page
+    const data = [
         {
             'title': 'H10 Madison',
             'description': `Located in the heart of Barcelona, just 240 metres from the cathedral,
